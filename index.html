@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelRealms</title>
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/1122020.jpg'); /* Example Minecraft background */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        button {
+            background-color: #00aaff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        button:hover {
+            background-color: #0088cc;
+        }
+
+        #server-info {
+            display: none;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to PixelRealms</h1>
+
+        <button onclick="window.open('https://discord.gg/72kqTwyjZu', '_blank')">Join Our Discord</button>
+
+        <button onclick="document.getElementById('server-info').style.display = 'block'">Show Server Info</button>
+
+        <div id="server-info">
+            <p>Java IP: <strong>pixelrealms.tech</strong></p>
+            <p>Bedrock IP: <strong>pixelrealms.tech</strong></p>
+            <p>Port: <strong>25703</strong></p>
+        </div>
+    </div>
+
+</body>
+</html>
